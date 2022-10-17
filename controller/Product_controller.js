@@ -1,7 +1,7 @@
 const product = require("../model/Product_mode")
 exports.createProductDetails = async(req,res)=>{
 try {
-    const result = await user.create({
+    const result = await product.create({
         ProductId:Math.floor(Math.random()*10000),
         ProductName:req.body.ProductName,
         ProductDescription:req.body.ProductDescription,
